@@ -23,6 +23,6 @@ jobs:
           username: ${{ secrets.EC2_USER }}
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
-            cd /ruta/a/tu/proyecto
+            cd /home/ec2-user/taller-monitoreo-visualizacion
             git pull
             docker compose up -d prometheus grafana
