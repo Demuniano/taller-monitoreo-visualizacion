@@ -1,6 +1,7 @@
 name: Deploy Monitoring Stack
 
 on:
+  workflow_dispatch:
   push:
     paths:
       - 'monitoring/**'
